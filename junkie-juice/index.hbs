@@ -1,0 +1,51 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<div class="container">
+    {{! The big featured header }}
+
+    <div class="row">
+        <div class="col-md-8">
+            {{! The main content area on the homepage }}
+            <main id="content" class="content m-t-4" role="main">
+
+                {{! The tag below includes the post loop - partials/loop.hbs }}
+                {{> "loop"}}
+
+            </main>
+        </div>
+        <div class="col-md-4">
+            <div class="sidebar-module sidebar-module-inset hidden-md-down">
+                <h4>About Us</h4>
+                <p>Thoughts, ideas and solutions from a couple of EPM consultants.</p>
+            </div>
+            <div class="sidebar-module sidebar-module-inset">
+                {{#get "tags" limit="20" include="count.posts" order="count.posts desc"}}
+                    
+                    {{#if tags}}    
+                            {{#foreach tags}}
+                                <a href="{{url}}" title="{{name}}" class="label label-tag">{{name}}</a>
+                            {{/foreach}}
+                        {{/if}}
+                {{/get}}
+            </div>
+            <div class="sidebar-module">
+                <h4>Friends</h4>
+                <ol class="list-unstyled">
+                    <li><a href="https://github.com/epmjunkie">GitHub</a></li>
+                    <li><a href="http://www.odtug.com/">ODTUG</a></li>
+                    <li><a href="http://www.orahyplabs.com/">Celvin Kattookaran's Blog</a></li>
+                    <li><a href="https://hyperionbarbie.wordpress.com/">Kate Helmer's (HYPERIONBARBIE) Blog</a></li>
+                    <li><a href="http://camerons-blog-for-essbase-hackers.blogspot.com/">Cameron's Blog For Essbase Hackers</a></li>
+                    <li><a href="http://hyperionfinn.blogspot.com/">The Finnish Hyperion Guy</a></li>
+                    <li><a href="http://fishingwithfdmee.blogspot.com/">fishing with FDMEE</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+
+
+</div>
+
+

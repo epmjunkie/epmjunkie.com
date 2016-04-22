@@ -1,0 +1,42 @@
+
+<header class="p-t-2 p-b-2">
+     <div class="container">
+         <div class="row">
+            <div class="col-md-6 pull-md-left text-xs-center text-md-left p-b-1">
+                <a href="/"><img src="{{@blog.logo}}" /></a>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <p class="page-description text-xs-center hidden-md-up">{{@blog.description}}</p>
+                <div class="header-icons text-xs-center text-md-right p-b-1">
+                        <a class="" href="https://twitter.com/epmjunkie">
+                            <i class="icon-twitter"></i>
+                            <span class="hidden">Twitter</span>
+                        </a>
+                        <a class="" href="https://github.com/epmjunkie">
+                            <i class="icon-github"></i>
+                            <span class="hidden">Github</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-light" style="background-color: #279AD8;">
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+                &#9776;
+            </button>
+            <div class="container">
+                <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+                    <ul class="nav navbar-nav">
+                    {{#foreach navigation}}
+                        <li class="nav-item">
+                            <a href="{{url}}" class="nav-link">{{label}}</a>
+                        </li>
+                    {{/foreach}}
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+</header>
+
