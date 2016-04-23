@@ -495,10 +495,7 @@ kbd {
     text-decoration: underline;
     color: #88b83e;
 }
-.blog-post-title {
-    margin-bottom: .25rem;
-    word-wrap: break-word;
-}
+
 .blog-post-meta a {
     color: #58666e;
 }
@@ -559,6 +556,10 @@ kbd {
 .post img {
     max-width: 100%;
     height: auto;
+}
+.post h2 {
+    margin-bottom: .25rem;
+    word-wrap: break-word;
 }
 .post-content img {
     text-align: center;
