@@ -611,6 +611,11 @@ header img {
     margin-right: .3rem;
 }
 
+.post-content p > a > img {
+    text-align: center;
+    margin: 1em;
+}
+
 /* Small devices (landscape phones, 34em and up) */
 @media (max-width: 33.9em) { 
     .header-icons {
