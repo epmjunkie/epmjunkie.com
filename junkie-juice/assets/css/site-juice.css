@@ -42,12 +42,13 @@ h6, .h6 {
 
 .label-tag {
     background-color: #7aa2b1;
-    
     font-size: 85%;
     font-weight: 300;
-    
     vertical-align: baseline;
     border-radius: 0;
+}
+.label-tag:hover {
+    color: #333;
 }
 
 /*
@@ -122,11 +123,11 @@ Borrowed with love from Casper
 /* Import the font file with the icons in it */
 @font-face {
     font-family: "epmjunkie-icons";
-    src:url("../fonts/icomoon.eot?v=1");
-    src:url("../fonts/icomoon.eot?v=1#iefix") format("embedded-opentype"),
-        url("../fonts/icomoon.woff?v=1") format("woff"),
-        url("../fonts/icomoon.ttf?v=1") format("truetype"),
-        url("../fonts/icomoon.svg?v=1#icons") format("svg");
+    src:url("../fonts/icomoon.eot?v=2");
+    src:url("../fonts/icomoon.eot?v=2#iefix") format("embedded-opentype"),
+        url("../fonts/icomoon.woff?v=2") format("woff"),
+        url("../fonts/icomoon.ttf?v=2") format("truetype"),
+        url("../fonts/icomoon.svg?v=2#icons") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -146,23 +147,23 @@ Borrowed with love from Casper
 }
 
 .icon-github:before {
-    content: "\e907";
+    content: "\eab0";
 }
 .icon-twitter:before {
-    content: "\e909";
+    content: "\e901";
     font-size: 1.1em;
 }
 .icon-google-plus:before {
-    content: "\e908";
-}
-.icon-facebook:before {
-    content: "\e90a";
-}
-.icon-arrow-left:before {
     content: "\e900";
 }
-.icon-arrow-right:before {
-    content: "\e903";
+.icon-facebook:before {
+    content: "\e902";
+}
+.icon-linkedin:before {
+    content: "\eac9";
+}
+.icon-lifebuoy:before {
+    content: "\e941";
 }
 
 p, ul, ol, dl {
@@ -443,7 +444,9 @@ kbd {
     /*font-style: italic;*/
     color: #9EABB3;
 }
-
+.author-bio {
+    font-size: 1.3rem;
+}
 
 
 /* Create some space to the right for the share links */
@@ -473,6 +476,9 @@ kbd {
 }
 .share .icon-github:hover {
     color: #4078c0;
+}
+.share .icon-linkedin:hover {
+    color: #0077B5;
 }
 
 /*

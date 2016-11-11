@@ -1,15 +1,15 @@
 
 
-{{! This is the post loop - each post will be output using this markup }}
+{{!-- This is the post loop - each post will be output using this markup --}}
 {{#foreach posts}}
 
 <div class="blog-post {{post_class}}">
     <h2 class="blog-post-title"><a href="{{url}}">{{{title}}}</a></h2>
     <p>{{excerpt words="25"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-    <div class="post-tags m-b-1">
+    <div class="post-tags mb-1">
         {{#if tags}}
             {{#foreach tags}}
-                <a href="{{url}}" title="{{name}}" class="label label-tag">{{name}}</a>
+                <a href="{{url}}" title="{{name}}" class="tag label-tag">{{name}}</a>
             {{/foreach}}
         {{/if}}
     </div>
@@ -21,7 +21,7 @@
 
 {{/foreach}}
 
-{{! Previous/next page links - displayed on every page }}
+{{!-- Previous/next page links - displayed on every page --}}
 <div>
     {{pagination}}
 </div>
