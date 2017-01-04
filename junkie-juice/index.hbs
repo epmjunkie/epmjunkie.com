@@ -15,32 +15,7 @@
             </main>
         </div>
         <div class="col-md-4">
-            <div class="sidebar-module sidebar-module-inset">
-                <h5>About Us</h5>
-                <p>{{@blog.description}}</p>
-            </div>
-            <div class="sidebar-module sidebar-module-inset">
-                {{#get "tags" limit="20" include="count.posts" order="count.posts desc"}}
-                    {{#if tags}}
-                        {{#foreach tags}}
-                            <a href="{{url}}" title="{{name}}" class="tag label-tag">{{name}}</a>
-                        {{/foreach}}
-                    {{/if}}
-                {{/get}}
-            </div>
-            <div class="sidebar-module sidebar-module-inset pb-0">
-                <h5>Community</h5>
-                <ol class="list-unstyled">
-                    <li><a href="http://www.odtug.com/">ODTUG</a></li>
-                    <li><a href="http://www.orahyplabs.com/">Celvin Kattookaran's Blog</a></li>
-                    <li><a href="https://hyperionbarbie.wordpress.com/">Kate Helmer's (HYPERIONBARBIE) Blog</a></li>
-                    <li><a href="http://camerons-blog-for-essbase-hackers.blogspot.com/">Cameron's Blog For Essbase Hackers</a></li>
-                    <li><a href="http://www.jasonwjones.com/">jason's hyperion blog</a></li>
-                    <li><a href="http://hyperionfinn.blogspot.com/">The Finnish Hyperion Guy</a></li>
-                    <li><a href="http://fishingwithfdmee.blogspot.com/">fishing with FDMEE</a></li>
-                    <li><a href="http://www.hyperionepm.com/">Hyperion EPM</li>
-                </ol>
-            </div>
+            {{> "side"}}
         </div>
     </div>
 

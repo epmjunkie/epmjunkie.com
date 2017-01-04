@@ -40,17 +40,6 @@ h6, .h6 {
   max-width: 60rem;
 }
 
-.label-tag {
-    background-color: #7aa2b1;
-    font-size: 85%;
-    font-weight: 300;
-    vertical-align: baseline;
-    border-radius: 0;
-}
-.label-tag:hover {
-    color: #333;
-}
-
 /*
  * Masthead for nav
  */
@@ -170,7 +159,7 @@ p, ul, ol, dl {
     -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-    margin: 0 0 1.75em 0;
+    /*margin: 0 0 1.75em 0;*/
     text-rendering: geometricPrecision;
 }
 
@@ -505,6 +494,9 @@ kbd {
 .blog-post-meta a {
     color: #58666e;
 }
+.blog-post-meta {
+    font-size: 13px;
+}
 
 
 /*
@@ -540,36 +532,24 @@ kbd {
 }
 
 /* Custom */
-.author-image {
-    margin-right: .5rem;
+
+.pri-color {
+    color: #2181a9;
 }
-.author-image img {
-    width: 3em;
+.sec-color {
+    color: #88b83e;
 }
-.author-meta h4 {
-    font-weight: bold;
+.label-tag {
+    /*background-color: #7aa2b1;*/
+    background-color: #2181a9;
+    font-size: 85%;
+    font-weight: 300;
+    vertical-align: baseline;
+    /*border-radius: 0;*/
+    padding: .3em .4em;
 }
-.post-date {
-    font-size: 16pt;
-}
-.post-footer hr {
-    background-color: #ddd;
-    margin: 2rem 0;
-}
-.content {
-    word-wrap: break-word;
-}
-.post img {
-    max-width: 100%;
-    height: auto;
-}
-.post h2 {
-    margin-bottom: .25rem;
-    word-wrap: break-word;
-}
-.post-content img {
-    text-align: center;
-    margin: .5rem auto;
+.label-tag:hover {
+    color: #333;
 }
 a {
     color: #333;
@@ -579,12 +559,6 @@ a:hover {
     text-decoration: none;
 }
 
-.pri-color {
-    color: #2181a9;
-}
-.sec-color {
-    color: #88b83e;
-}
 
 .bg-faded {
     background-color: #ece8e4;
@@ -613,6 +587,7 @@ header img {
 .sidebar-module-inset {
     margin-top: 1em;
 }
+
 #tag-list a {
     margin-right: .3rem;
 }
@@ -620,6 +595,57 @@ header img {
 .post-content p > a > img {
     text-align: center;
     margin: 1em;
+}
+
+.author {
+    font-size: 17px;
+    font-weight: bold;
+    color: #555;
+}
+.author a {
+    color: #88b83e;
+}
+.author a:hover {
+    text-decoration: underline;
+}
+.author-image {
+    margin-right: .5rem;
+}
+.author-image img {
+    width: 3em;
+}
+.author-meta h4 {
+    font-weight: bold;
+    font-style: italic; /*sittin' sidewayz*/
+    margin-bottom: .1em;
+}
+.author-meta > div {
+    margin-top: 0em;
+}
+.post-date {
+    font-size: 16pt;
+}
+.post-footer hr {
+    background-color: #ddd;
+    margin: 2rem 0;
+}
+.content {
+    word-wrap: break-word;
+}
+.post img {
+    max-width: 100%;
+    height: auto;
+}
+.post h2 {
+    margin-bottom: .25rem;
+    word-wrap: break-word;
+}
+.post-content img {
+    text-align: center;
+    margin: .5rem auto;
+}
+.share h4 {
+    margin-bottom: 0;
 }
 
 /* Small devices (landscape phones, 34em and up) */

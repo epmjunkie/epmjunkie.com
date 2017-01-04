@@ -5,6 +5,8 @@
 
 <div class="blog-post {{post_class}}">
     <h2 class="blog-post-title"><a href="{{url}}">{{{title}}}</a></h2>
+    <span class="author">By {{author}}</span>
+    
     <p>{{excerpt words="25"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
     <div class="post-tags mb-1">
         {{#if tags}}
@@ -14,7 +16,6 @@
         {{/if}}
     </div>
     <div class="blog-post-meta">
-        {{author}} - 
         <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> 
     </div>
 </div>
