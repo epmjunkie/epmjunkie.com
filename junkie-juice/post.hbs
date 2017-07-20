@@ -6,7 +6,7 @@
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+<header class="main-header post-head {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}">
 </header>
 
 <div class="container">
@@ -45,9 +45,9 @@
                                     
 
                                     <section>
-                                        {{#if image}}
+                                        {{#if feature_image}}
                                             <figure class="author-image float-md-left float-xs-left">
-                                                <a class="img" href="{{url}}" alt="{{name}}'s Picture"><img src="{{image}}" class="rounded-circle" /></a>
+                                                <a class="img" href="{{url}}" alt="{{name}}'s Picture"><img src="{{feature_image}}" class="rounded-circle" /></a>
                                             </figure>
                                         {{/if}}
                                         <div class="author-meta">
@@ -91,7 +91,7 @@
         {{#next_post}}
         <div class="col-md-6">
             <h6 class="text-md-center">Next Up</h6>
-            <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+            <a class="read-next-story {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
                 <section class="post">
                     <h2>{{title}}</h2>
                     <p>{{excerpt words="19"}}&hellip;</p>
@@ -102,7 +102,7 @@
         {{#prev_post}}
         <div class="col-md-6">
             <h6 class="text-md-center">Prev Story</h6>
-            <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+            <a class="read-next-story prev {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
                 <section class="post">
                     <h2>{{title}}</h2>
                     <p>{{excerpt words="19"}}&hellip;</p>
